@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">MultiQuiz</string>
+    <string name="question_text">Who is the highest run getter in ODI World cup 2023?</string>
+    <string name="option1">David Warner</string>
+    <string name="option2">Virat Kohli</string>
+    <string name="option3">Jos Butler</string>
+    <string name="option4">Babar Azam</string>
+    <string name="hint">Hint</string>
+    <string name="submit">Submit</string>
+    <string name="question_platformParticipation" />
+    <string name="question_highestruns">Who is the highest run getter in ODI World Cup 2023?</string>
+    <string name="answer_warner">David Warner</string>
+    <string name="answer_kohli">Virat Kohli</string>
+    <string name="answer_butler">Jos Butler</string>
+    <string name="answer_babar">Babar Azam</string>
+    <string name="question_president">Who is the first president of USA?</string>
+    <string name="answer_lincon">Abraham Lincon</string>
+    <string name="answer_washington">George Washington</string>
+    <string name="answer_frank">Franklin</string>
+    <string name="answer_jhon">Jhon F kennidy</string>
+    <string name="question_capital">What is the capital city of France?</string>
+    <string name="answer_london">London</string>
+    <string name="answer_paris">Paris</string>
+    <string name="answer_berlin">Berlin</string>
+    <string name="answer_rome">Rome</string>
+    <string name="question_planet">Which planet is known as the "Red Planet"?</string>
+    <string name="answer_venus">Venus</string>
+    <string name="answer_mars">Mars</string>
+    <string name="answer_jupiter">Jupiter</string>
+    <string name="answer_saturn">Saturn</string>
+
+    <string name="summary_heading">Quiz Summary</string>
+    <string name="correct_answers_label">Correct Answers:</string>
+    <string name="hints_used_label">Hints Used:</string>
+    <string name="reset_all_button">Reset All </string>
+    <string name="hints_used_count">0</string>
+    <string name="correct_answers_count">0</string>
+
 </resources>
