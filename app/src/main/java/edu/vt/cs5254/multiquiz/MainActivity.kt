@@ -10,7 +10,7 @@ import androidx.activity.viewModels
 import edu.vt.cs5254.multiquiz.databinding.ActivityMainBinding
 
 private const val TAG = "MainActivity"
-private const val RESET_ALL = "reset_all"
+private const val RESET_ALL = "edu.vt.cs5254.multiquiz.reset_all"
 class MainActivity : AppCompatActivity() {
 
     // Name : Divakara Rao Annepu
@@ -142,19 +142,7 @@ class MainActivity : AppCompatActivity() {
             button.updateColor()
         }
     }
-//
-//    private fun updateQuestionUI() {
-//        val currentQuestion = questionBankView.getCurrentQuestion()
-//
-//        binding.questionTextView.text =  getString(currentQuestion.questionResId)
-//
-//        answerButtonsList().forEachIndexed{ind,button ->
-//            button.text = getString(currentQuestion.answerList[ind].textResId)
-//            button.isSelected = currentQuestion.answerList[ind].isSelected
-//            button.isEnabled = currentQuestion.answerList[ind].isEnabled
-//            button.updateColor()
-//        }
-//    }
+
 
     private fun answerButtonsList(): Array<Button> {
         return arrayOf(

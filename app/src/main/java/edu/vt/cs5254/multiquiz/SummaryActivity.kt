@@ -11,19 +11,22 @@ import edu.vt.cs5254.multiquiz.databinding.ActivitySummaryBinding
 
 private const val CORRECT_ANSWERS = "edu.vt.cs5254.multiquiz.correct_answers"
 private const val HINTS_USED = "edu.vt.cs5254.multiquiz.hints_used"
-private const val RESET_ALL = "reset_all"
+private const val RESET_ALL = "edu.vt.cs5254.multiquiz.reset_all"
 class SummaryActivity : AppCompatActivity() {
 
     private val summaryViewModel : SummaryView by viewModels()
     private lateinit var binding: ActivitySummaryBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySummaryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setResetAllResult(false)
-        summaryViewModel.correctAnswers = intent.getIntExtra(CORRECT_ANSWERS, summaryViewModel.correctAnswers)
-        summaryViewModel.hintsUsed = intent.getIntExtra(HINTS_USED, summaryViewModel.hintsUsed)
+        setResetAllResult(summaryViewModel.isReset)
+        if (savedInstanceState == null) {
+            summaryViewModel.correctAnswers = intent.getIntExtra(CORRECT_ANSWERS, 0)
+            summaryViewModel.hintsUsed = intent.getIntExtra(HINTS_USED, 0)
+        }
 
         updateUI()
 
@@ -61,9 +64,9 @@ class SummaryActivity : AppCompatActivity() {
     }
 
     private fun setResetAllResult(isReset: Boolean) {
-        val data = Intent().apply {
+        val result = Intent().apply {
             putExtra(RESET_ALL, isReset)
         }
-        setResult(Activity.RESULT_OK, data)
+        setResult(Activity.RESULT_OK, result)
     }
 }
