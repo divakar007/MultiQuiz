@@ -14,6 +14,9 @@ private const val HINTS_USED = "edu.vt.cs5254.multiquiz.hints_used"
 private const val RESET_ALL = "edu.vt.cs5254.multiquiz.reset_all"
 class SummaryActivity : AppCompatActivity() {
 
+    // Name : Divakara Rao Annepu
+    // PID : adivakararao
+
     private val summaryViewModel : SummaryView by viewModels()
     private lateinit var binding: ActivitySummaryBinding
 
